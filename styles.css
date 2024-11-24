@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 10px;
+    margin: 20px 0;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #3f51b5;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.card.flipped {
+    background-color: #ff5722;
+}
+
+#resetButton {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3f51b5;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#resetButton:hover {
+    background-color: #303f9f;
+}
+
+#scoreDisplay,
+#timerDisplay,
+#levelDisplay {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#leaderboard {
+    margin-top: 20px;
+}
+
+#leaderboardList {
+    list-style: none;
+    padding: 0;
+}
+
+#leaderboardList li {
+    margin: 5px 0;
+}
+
+.help-section {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    display: none; /* Initially hidden */
+    text-align: center; /* Align text to the left */
+}
+
+.help-section h2 {
+    margin: 0 0 10px;
+}
+
+.help-section p {
+    margin: 5px 0;
+}
+
+.help-section ul {
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 5px 0; /* Add margin */
+}
+
+.help-section li {
+    margin: 5px 0; /* Add spacing between list items */
+}

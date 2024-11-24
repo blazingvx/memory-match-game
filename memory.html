@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Memory Match Game</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Memory Match Game</h1>
+        <div id="gameBoard" class="game-board"></div>
+        <button id="resetButton">Play Again</button>
+        <div id="scoreDisplay">Score: <span id="score">0</span></div>
+        <div id="timerDisplay">Time: <span id="timer">0</span> seconds</div>
+        <div id="levelDisplay">Level: <span id="level">1</span></div>
+        <div id="leaderboard">
+            <h2>Leaderboard</h2>
+            <ul id="leaderboardList"></ul>
+        </div>
+    </div>
+    <div id="help" class="help-section">
+        <h2>How to Play</h2>
+        <p>
+            Welcome to the Memory Match Game! The objective is to find and match pairs of cards.
+        </p>
+        <p>
+            <strong>Instructions:</strong>
+        </p>
+        <ul>
+            <li>Click on a card to flip it over and reveal its letter.</li>
+            <li>Try to remember the positions of the letters.</li>
+            <li>Click on another card to flip it over.</li>
+            <li>If the two cards match, they will stay flipped over.</li>
+            <li>If they don't match, they will flip back after a short delay.</li>
+            <li>Complete the level by matching all pairs of cards.</li>
+            <li>With each level, the number of pairs increases (up to 26 pairs).</li>
+            <li>Your time is recorded, and the leaderboard will display the top 10 fastest times.</li>
+        </ul>
+        <p>
+            <strong>Good luck!</strong>
+        </p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
